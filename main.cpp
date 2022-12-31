@@ -196,53 +196,53 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
+Thing 1) dishwasher
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) door
+    2) upper rack
+    3) silverware basket
+    4) start button
+    5) cycle option dial
 3 things it can do:
-    1)
-    2)
-    3)
+    1) spray dishes with water
+    2) spin the spray nozzles
+    3) heat the dishes to dry them
 
-Thing 2)
+Thing 2) desk
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) keyboard tray
+    2) monitor riser
+    3) mouse pad
+    4) work surface
+    5) drawer
 3 things it can do:
-    1)
-    2)
-    3)
+    1) store things
+    2) hold a computer
+    3) extend and retract the keyboard tray
 
-Thing 3)
+Thing 3) mp3 player
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) play button
+    2) on/off switch
+    3) display screen
+    4) belt clip
+    5) memory card slot
 3 things it can do:
-    1)
-    2)
-    3)
+    1) load files from memory card
+    2) play a music file
+    3) display information about files
 
-Thing 4)
+Thing 4) bicycle
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) chain
+    2) seat
+    3) handlebars
+    4) wheels
+    5) pedals
 3 things it can do:
-    1)
-    2)
-    3)
+    1) support the rider
+    2) roll
+    3) turn left
 */
 
 /*
