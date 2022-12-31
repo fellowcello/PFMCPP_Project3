@@ -443,7 +443,14 @@ Thing 1) dishwasher
     1) spray dishes with water
     2) spin the spray nozzles
     3) heat the dishes to dry them
+*/
+struct Dishwasher
+{
+    
+};
 
+
+/*
 Thing 2) desk
 5 properties:
     1) keyboard tray width (float)
@@ -455,7 +462,13 @@ Thing 2) desk
     1) store things
     2) hold a computer
     3) extend and retract the keyboard tray
+*/
+struct Desk
+{
+    
+};
 
+/*
 Thing 3) mp3 player
 5 properties:
     1) number of buttons (int)
@@ -467,7 +480,13 @@ Thing 3) mp3 player
     1) load files from memory card
     2) play a music file
     3) display information about files
+*/
+struct Mp3Player
+{
+    
+};
 
+/*
 Thing 4) bicycle
 5 properties:
     1) chain length (float)
@@ -479,7 +498,13 @@ Thing 4) bicycle
     1) support the rider
     2) roll
     3) turn left
+*/
+struct Bicycle
+{
+    
+};
 
+/*
 Thing 5) cd drive
 5 properties:
     1) max speed (int)
@@ -491,7 +516,13 @@ Thing 5) cd drive
     1) play cds
     2) play dvds
     3) write cd-rs
+*/
+struct CdDrive
+{
+    
+};
 
+/*
 Thing 6) monitor
 5 properties:
     1) width (float)
@@ -503,7 +534,13 @@ Thing 6) monitor
     1) dislay images
     2) adjust brightness
     3) turn off
+*/
+struct Monitor
+{
+    
+};
 
+/*
 Thing 7) hard drive
 5 properties:
     1) max speed (int)
@@ -515,7 +552,13 @@ Thing 7) hard drive
     1) store data
     2) retrieve data
     3) go into power-save mode
+*/
+struct HardDrive
+{
+    
+};
 
+/*
 Thing 8) keyboard
 5 properties:
     1) number of keys (int)
@@ -527,7 +570,13 @@ Thing 8) keyboard
     1) output button presses
     2) display num lock
     3) display caps lock
+*/
+struct Keyboard
+{
+    
+};
 
+/*
 Thing 9) cpu
 5 properties:
     1) speed (int)
@@ -539,7 +588,13 @@ Thing 9) cpu
     1) communicate with memory
     2) communicate with video card
     3) communicate with peripherals
+*/
+struct Cpu
+{
+    
+};
 
+/*
 Thing 10) computer
 5 properties:
     1) cd drive
@@ -552,6 +607,10 @@ Thing 10) computer
     2) save documents
     3) play videos
 */
+struct Computer
+{
+    
+};
 
 
 
