@@ -436,11 +436,11 @@ example:
 
 Thing 5) cd drive
 5 properties:
-    1) max speed
-    2) disc diameter
-    3) number of trays
-    4) color
-    5) number of formats supported
+    1) max speed (int)
+    2) disc diameter (float)
+    3) number of trays (int)
+    4) color (std::string)
+    5) number of formats supported (int)
 3 things it can do:
     1) play cds
     2) play dvds
@@ -448,11 +448,11 @@ Thing 5) cd drive
 
 Thing 6) monitor
 5 properties:
-    1) width
-    2) number of pixels
-    3) color
-    4) refresh rate
-    5) depth
+    1) width (float)
+    2) number of pixels (int)
+    3) color (std::string)
+    4) refresh rate (int)
+    5) depth (float)
 3 things it can do:
     1) dislay images
     2) adjust brightness
@@ -460,11 +460,11 @@ Thing 6) monitor
 
 Thing 7) hard drive
 5 properties:
-    1) max speed
-    2) number of platters
-    3) number of magnets
-    4) memory size
-    5) age in years
+    1) max speed (int)
+    2) number of platters (int)
+    3) number of magnets (int)
+    4) memory size (int)
+    5) age in years (int)
 3 things it can do:
     1) store data
     2) retrieve data
@@ -472,11 +472,11 @@ Thing 7) hard drive
 
 Thing 8) keyboard
 5 properties:
-    1) number of keys
-    2) number of function keys
-    3) case color
-    4) button color
-    5) width
+    1) number of keys (int)
+    2) number of function keys (int)
+    3) case color (std::string)
+    4) button color (std::string)
+    5) width (float)
 3 things it can do:
     1) output button presses
     2) display num lock
@@ -484,11 +484,11 @@ Thing 8) keyboard
 
 Thing 9) cpu
 5 properties:
-    1) speed
-    2) width
-    3) height
-    4) chipset name
-    5) age in years
+    1) speed (int)
+    2) width (float)
+    3) height (float)
+    4) chipset name (std::string)
+    5) age in years (int)
 3 things it can do:
     1) communicate with memory
     2) communicate with video card
