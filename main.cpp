@@ -198,11 +198,11 @@ Part 1b - Step 2: Assignment
 
 Thing 1) dishwasher
 5 properties:
-    1) door
-    2) upper rack
-    3) silverware basket
-    4) start button
-    5) cycle option dial
+    1) color (sdt::string)
+    2) number of racks (int)
+    3) number of silverware baskets (int)
+    4) start button width (float)
+    5) cycle option dial diameter (float)
 3 things it can do:
     1) spray dishes with water
     2) spin the spray nozzles
@@ -210,11 +210,11 @@ Thing 1) dishwasher
 
 Thing 2) desk
 5 properties:
-    1) keyboard tray
-    2) monitor riser
-    3) mouse pad
-    4) work surface
-    5) drawer
+    1) keyboard tray width (float)
+    2) monitor riser height (float)
+    3) mouse pad color (sdt::string)
+    4) work surface width (float)
+    5) number of drawers (int)
 3 things it can do:
     1) store things
     2) hold a computer
@@ -222,11 +222,11 @@ Thing 2) desk
 
 Thing 3) mp3 player
 5 properties:
-    1) play button
-    2) on/off switch
-    3) display screen
-    4) belt clip
-    5) memory card slot
+    1) number of buttons (int)
+    2) on/off switch color (sdt::string)
+    3) display screen width (float)
+    4) belt clip depth (float)
+    5) number of memory card slots (int)
 3 things it can do:
     1) load files from memory card
     2) play a music file
@@ -234,11 +234,11 @@ Thing 3) mp3 player
 
 Thing 4) bicycle
 5 properties:
-    1) chain
-    2) seat
-    3) handlebars
-    4) wheels
-    5) pedals
+    1) chain length (float)
+    2) seat color (sdt::string)
+    3) handlebars width (float)
+    4) number of wheels (int)
+    5) pedals material (sdt::string)
 3 things it can do:
     1) support the rider
     2) roll
@@ -337,17 +337,17 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10)
+Thing 10) computer
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) cd drive
+    2) monitor
+    3) hard drive
+    4) keyboard
+    5) cpu
 3 things it can do:
-    1)
-    2)
-    3)
+    1) load documents
+    2) save documents
+    3) play videos
  */
 
  /*
@@ -434,65 +434,65 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
+Thing 5) cd drive
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) max speed
+    2) disc diameter
+    3) number of trays
+    4) color
+    5) number of formats supported
 3 things it can do:
-    1)
-    2)
-    3)
+    1) play cds
+    2) play dvds
+    3) write cd-rs
 
-Thing 6)
+Thing 6) monitor
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) width
+    2) number of pixels
+    3) color
+    4) refresh rate
+    5) depth
 3 things it can do:
-    1)
-    2)
-    3)
+    1) dislay images
+    2) adjust brightness
+    3) turn off
 
-Thing 7)
+Thing 7) hard drive
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) max speed
+    2) number of platters
+    3) number of magnets
+    4) memory size
+    5) age in years
 3 things it can do:
-    1)
-    2)
-    3)
+    1) store data
+    2) retrieve data
+    3) go into power-save mode
 
-Thing 8)
+Thing 8) keyboard
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) number of keys
+    2) number of function keys
+    3) case color
+    4) button color
+    5) width
 3 things it can do:
-    1)
-    2)
-    3)
+    1) output button presses
+    2) display num lock
+    3) display caps lock
 
-Thing 9)
+Thing 9) cpu
 5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
+    1) speed
+    2) width
+    3) height
+    4) chipset name
+    5) age in years
 3 things it can do:
-    1)
-    2)
-    3)
+    1) communicate with memory
+    2) communicate with video card
+    3) communicate with peripherals
  */
 
 /*
