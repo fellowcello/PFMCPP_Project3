@@ -83,51 +83,51 @@ Main Object: Car Interior
         Name 4 nouns you'll find on the [Sub Object]
             1) paddle shifters
             2) 'cruise control' controls
-            3) 
-            4) 
+            3) horn button
+            4) grip material
         Name 2 actions that the [Sub Object] can do:
             1) adjust cruise control settings.
-            2)
+            2) activate the horn sound
         
     Sub Object: Instrument Cluster
         Name 4 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
-            4)
+            1) turn signal indicators
+            2) odometer
+            3) speed meter
+            4) gear indicator
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) display the current speed
+            2) display the current engine rpm's
+            3) show turn signal statuses
     
     Sub Object: Environment Controls
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) driver temperature dial
+            2) A/C button
+            3) passenger temperature dial
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) turn on air conditioning
+            2) change temperature settings for driver's side
+            3) change fan speed
 
     Sub Object: Infotainment System
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) on button
+            2) clear button
+            3) CD input slot
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) play a CD
+            2) play the radio
+            3) make phonecalls
 
     Sub Object: Seat 
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) headrest
+            2) lumbar support
+            3) padding
         Name 2 actions that the [Sub Object] can do:
-            1)
-            2)
+            1) support the person sitting in it
+            2) move forwards and backwards
 */
 
 /*
