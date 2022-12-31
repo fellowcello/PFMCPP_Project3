@@ -446,7 +446,16 @@ Thing 1) dishwasher
 */
 struct Dishwasher
 {
-    
+    //5 properties:
+    //    - color (sdt::string)
+    //    - number of racks (int)
+    //    - number of silverware baskets (int)
+    //    - start button width (float)
+    //    - cycle option dial diameter (float)
+    //3 things it can do:
+    //    - spray dishes with water
+    //    - spin the spray nozzles
+    //    - heat the dishes to dry them
 };
 
 
@@ -465,7 +474,16 @@ Thing 2) desk
 */
 struct Desk
 {
-    
+    //5 properties:
+    //    - keyboard tray width (float)
+    //    - monitor riser height (float)
+    //    - mouse pad color (sdt::string)
+    //    - work surface width (float)
+    //    - number of drawers (int)
+    //3 things it can do:
+    //    - store things
+    //    - hold a computer
+    //    - extend and retract the keyboard tray
 };
 
 /*
@@ -483,7 +501,16 @@ Thing 3) mp3 player
 */
 struct Mp3Player
 {
-    
+    //5 properties:
+    //    - number of buttons (int)
+    //    - on/off switch color (sdt::string)
+    //    - display screen width (float)
+    //    - belt clip depth (float)
+    //    - number of memory card slots (int)
+    //3 things it can do:
+    //    - load files from memory card
+    //    - play a music file
+    //    - display information about files
 };
 
 /*
@@ -501,7 +528,16 @@ Thing 4) bicycle
 */
 struct Bicycle
 {
-    
+    //5 properties:
+    //    - chain length (float)
+    //    - seat color (sdt::string)
+    //    - handlebars width (float)
+    //    - number of wheels (int)
+    //    - pedals material (sdt::string)
+    //3 things it can do:
+    //    - support the rider
+    //    - roll
+    //    - turn left
 };
 
 /*
@@ -519,7 +555,16 @@ Thing 5) cd drive
 */
 struct CdDrive
 {
-    
+    //5 properties:
+    //    - max speed (int)
+    //    - disc diameter (float)
+    //    - number of trays (int)
+    //    - color (std::string)
+    //    - number of formats supported (int)
+    //3 things it can do:
+    //    - play cds
+    //    - play dvds
+    //    - write cd-rs
 };
 
 /*
@@ -537,7 +582,16 @@ Thing 6) monitor
 */
 struct Monitor
 {
-    
+    //5 properties:
+    //    - width (float)
+    //    - number of pixels (int)
+    //    - color (std::string)
+    //    - refresh rate (int)
+    //    - depth (float)
+    //3 things it can do:
+    //    - dislay images
+    //    - adjust brightness
+    //    - turn off
 };
 
 /*
@@ -555,7 +609,16 @@ Thing 7) hard drive
 */
 struct HardDrive
 {
-    
+    //5 properties:
+    //    - max speed (int)
+    //    - number of platters (int)
+    //    - number of magnets (int)
+    //    - memory size (int)
+    //    - age in years (int)
+    //3 things it can do:
+    //    - store data
+    //    - retrieve data
+    //    - go into power-save mode
 };
 
 /*
@@ -573,7 +636,16 @@ Thing 8) keyboard
 */
 struct Keyboard
 {
-    
+    //5 properties:
+    //    - number of keys (int)
+    //    - number of function keys (int)
+    //    - case color (std::string)
+    //    - button color (std::string)
+    //    - width (float)
+    //3 things it can do:
+    //    - output button presses
+    //    - display num lock
+    //    - display caps lock
 };
 
 /*
@@ -591,7 +663,16 @@ Thing 9) cpu
 */
 struct Cpu
 {
-    
+    //5 properties:
+    //    - speed (int)
+    //    - width (float)
+    //    - height (float)
+    //    - chipset name (std::string)
+    //    - age in years (int)
+    //3 things it can do:
+    //    - communicate with memory
+    //    - communicate with video card
+    //    - communicate with peripherals   
 };
 
 /*
@@ -609,7 +690,16 @@ Thing 10) computer
 */
 struct Computer
 {
-    
+    //5 properties:
+    //    - cd drive
+    //    - monitor
+    //    - hard drive
+    //    - keyboard
+    //    - cpu
+    //3 things it can do:
+    //    - load documents
+    //    - save documents
+    //    - play videos  
 };
 
 
