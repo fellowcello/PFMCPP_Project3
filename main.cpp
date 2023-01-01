@@ -754,11 +754,11 @@ struct Cpu
     int ageInYears = 3;
     //3 things it can do:
     //    - communicate with memory
-    void communicateWithMemory(); 
+    void communicateWithMemory(HardDrive hardDrive); 
     //    - communicate with video card
-    void communicateWithVideoCard(); 
+    void communicateWithVideoCard(Monitor monitor); 
     //    - communicate with peripherals  
-    void communicateWithPeripheral(); 
+    void communicateWithPeripheral(Keyboard keyboard); 
 };
 
 /*
