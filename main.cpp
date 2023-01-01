@@ -605,6 +605,20 @@ struct CdDrive
     void playDVD(); 
     //    - write cd-rs
     void writeCdr(); 
+
+    struct CD
+    {
+        //5 properties:
+        int maxSpeed = 100;
+        float outerDiameter = 5.0f;
+        float innerDiameter = 0.5f;
+        std::string color { "black" };
+        std::string title { "Dark Side Of The Moon" };
+        //3 things it can do:
+        void getScratched(); 
+        void storeData(); 
+        void goObsolete(); 
+    };
 };
 
 /*
