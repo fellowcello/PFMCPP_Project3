@@ -83,51 +83,51 @@ Main Object: Car Interior
         Name 4 nouns you'll find on the [Sub Object]
             1) paddle shifters
             2) 'cruise control' controls
-            3) 
-            4) 
+            3) horn button
+            4) grip material
         Name 2 actions that the [Sub Object] can do:
             1) adjust cruise control settings.
-            2)
+            2) activate the horn sound
         
     Sub Object: Instrument Cluster
         Name 4 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
-            4)
+            1) turn signal indicators
+            2) odometer
+            3) speed meter
+            4) gear indicator
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) display the current speed
+            2) display the current engine rpm's
+            3) show turn signal statuses
     
     Sub Object: Environment Controls
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) driver temperature dial
+            2) A/C button
+            3) passenger temperature dial
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) turn on air conditioning
+            2) change temperature settings for driver's side
+            3) change fan speed
 
     Sub Object: Infotainment System
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) on button
+            2) clear button
+            3) CD input slot
         Name 3 actions that the [Sub Object] can do:
-            1)
-            2)
-            3)
+            1) play a CD
+            2) play the radio
+            3) make phonecalls
 
     Sub Object: Seat 
         Name 3 nouns you'll find on the [Sub Object]
-            1)
-            2)
-            3)
+            1) headrest
+            2) lumbar support
+            3) padding
         Name 2 actions that the [Sub Object] can do:
-            1)
-            2)
+            1) support the person sitting in it
+            2) move forwards and backwards
 */
 
 /*
@@ -196,53 +196,7 @@ Part 1b - Step 2: Assignment
         c) pick properties that can eventually be represented with 
         'int float double bool char std::string'.
 
-Thing 1)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 
-Thing 2)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 3)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 4)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 */
 
 /*
@@ -337,17 +291,7 @@ Define an object that is made of 5 sub-objects.
     These 5 sub-objects will not be defined using Primitives, but instead will be their own UDTs 
     you'll define these 5 sub-objects in Part 1d.
 
-Thing 10)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
+
  */
 
  /*
@@ -434,65 +378,7 @@ example:
     You will need to provide 5 properties and 3 member functions of that Engine object in plain English.
     Remember to pick properties that can be represented with 'int float double bool char std::string'.
 
-Thing 5)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
 
-Thing 6)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 7)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 8)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
-
-Thing 9)
-5 properties:
-    1)
-    2)
-    3)
-    4)
-    5)
-3 things it can do:
-    1)
-    2)
-    3)
  */
 
 /*
@@ -545,11 +431,145 @@ MOVE THEM to the space below this block comment and put them in numerical order
     simply CUT and PASTE them in the space provided below:
 */
 
+/*
+Thing 1) dishwasher
+5 properties:
+    1) color (sdt::string)
+    2) number of racks (int)
+    3) number of silverware baskets (int)
+    4) start button width (float)
+    5) cycle option dial diameter (float)
+3 things it can do:
+    1) spray dishes with water
+    2) spin the spray nozzles
+    3) heat the dishes to dry them
+*/
 
+/*
+Thing 2) desk
+5 properties:
+    1) keyboard tray width (float)
+    2) monitor riser height (float)
+    3) mouse pad color (sdt::string)
+    4) work surface width (float)
+    5) number of drawers (int)
+3 things it can do:
+    1) store things
+    2) hold a computer
+    3) extend and retract the keyboard tray
+*/
 
+/*
+Thing 3) mp3 player
+5 properties:
+    1) number of buttons (int)
+    2) on/off switch color (sdt::string)
+    3) display screen width (float)
+    4) belt clip depth (float)
+    5) number of memory card slots (int)
+3 things it can do:
+    1) load files from memory card
+    2) play a music file
+    3) display information about files
+*/
 
+/*
+Thing 4) bicycle
+5 properties:
+    1) chain length (float)
+    2) seat color (sdt::string)
+    3) handlebars width (float)
+    4) number of wheels (int)
+    5) pedals material (sdt::string)
+3 things it can do:
+    1) support the rider
+    2) roll
+    3) turn left
+*/
 
+/*
+Thing 5) cd drive
+5 properties:
+    1) max speed (int)
+    2) disc diameter (float)
+    3) number of trays (int)
+    4) color (std::string)
+    5) number of formats supported (int)
+3 things it can do:
+    1) play cds
+    2) play dvds
+    3) write cd-rs
+*/
 
+/*
+Thing 6) monitor
+5 properties:
+    1) width (float)
+    2) number of pixels (int)
+    3) color (std::string)
+    4) refresh rate (int)
+    5) depth (float)
+3 things it can do:
+    1) dislay images
+    2) adjust brightness
+    3) turn off
+*/
+
+/*
+Thing 7) hard drive
+5 properties:
+    1) max speed (int)
+    2) number of platters (int)
+    3) number of magnets (int)
+    4) memory size (int)
+    5) age in years (int)
+3 things it can do:
+    1) store data
+    2) retrieve data
+    3) go into power-save mode
+*/
+
+/*
+Thing 8) keyboard
+5 properties:
+    1) number of keys (int)
+    2) number of function keys (int)
+    3) case color (std::string)
+    4) button color (std::string)
+    5) width (float)
+3 things it can do:
+    1) output button presses
+    2) display num lock
+    3) display caps lock
+*/
+
+/*
+Thing 9) cpu
+5 properties:
+    1) speed (int)
+    2) width (float)
+    3) height (float)
+    4) chipset name (std::string)
+    5) age in years (int)
+3 things it can do:
+    1) communicate with memory
+    2) communicate with video card
+    3) communicate with peripherals
+*/
+
+/*
+Thing 10) computer
+5 properties:
+    1) cd drive
+    2) monitor
+    3) hard drive
+    4) keyboard
+    5) cpu
+3 things it can do:
+    1) load documents
+    2) save documents
+    3) play videos
+*/
 
 
 /*
@@ -1010,12 +1030,239 @@ Part 1e - Step 19: Request a review
 paste your code below
 */
 
+struct Dishwasher
+{
+    //5 properties:
+    //    - color (sdt::string)
+    std::string color { "green" };
+    //    - number of racks (int)
+    int numberOfRacks = 2;
+    //    - number of silverware baskets (int)
+    int numberOfSilverwareBaskets = 3;
+    //    - start button width (float)
+    float startButtonWidth = 1.0f;
+    //    - cycle option dial diameter (float)
+    float cycleDialDiameter = 3.0f;
+    //3 things it can do:
+    //    - spray dishes with water
+    void sprayDishes(); 
+    //    - spin the spray nozzles
+    void spinNozzles(); 
+    //    - heat the dishes to dry them
+    void heatDishes(int minutesToHeat); 
+};
 
+struct Desk
+{
+    //5 properties:
+    //    - keyboard tray width (float)
+    float keyboardTrayWidth = 12.0f;
+    //    - monitor riser height (float)
+    float monitorRiserHeight = 5.0f;
+    //    - mouse pad color (sdt::string)
+    std::string color { "blue" };
+    //    - work surface width (float)
+    float workSurfaceWidth = 36.0f;
+    //    - number of drawers (int)
+    int numberOfDrawers = 3;
+    //3 things it can do:
+    //    - store things
+    void storeThings(int numberOfThings); 
+    //    - hold a computer
+    void holdComputer(); 
+    //    - extend and retract the keyboard tray
+    void extendKeyboardTray(); 
+};
 
+struct Mp3Player
+{
+    //5 properties:
+    //    - number of buttons (int)
+    int numberOfButtons = 5;
+    //    - on/off switch color (sdt::string)
+    std::string onOffSwitchColor { "white" };
+    //    - display screen width (float)
+    float displayScreenWidth = 1.0f;
+    //    - belt clip depth (float)
+    float beltClipDepth = 1.0f;
+    //    - number of memory card slots (int)
+    int numberOfCardSlots = 1;
+    //3 things it can do:
+    //    - load files from memory card
+    void loadFile(std::string filePath); 
+    //    - play a music file
+    void playFile(); 
+    //    - display information about files
+    void displayInfo(); 
+};
 
+struct Bicycle
+{
+    //5 properties:
+    //    - chain length (float)
+    float chainLength = 1.0f;
+    //    - seat color (sdt::string)
+    std::string seatColor { "green" };
+    //    - handlebars width (float)
+    float handlebarsWidth = 24.0f;
+    //    - number of wheels (int)
+    int numberOfWheels = 2;
+    //    - pedals material (sdt::string)
+    std::string pedalsMaterial { "steel" };
+    //3 things it can do:
+    //    - support the rider
+    void supportRider(); 
+    //    - roll
+    void roll(); 
+    //    - turn left
+    void turnLeft(); 
+};
 
+struct CdDrive
+{
+    //5 properties:
+    //    - max speed (int)
+    int maxSpeed = 100;
+    //    - disc diameter (float)
+    float discDiameter = 5.0f;
+    //    - number of trays (int)
+    int numberOfTrays = 1;
+    //    - color (std::string)
+    std::string color { "black" };
+    //    - number of formats supported (int)
+    int numberOfFormatsSupported = 3;
+    //3 things it can do:
+    //    - play cds
+    void playCd(); 
+    //    - play dvds
+    void playDVD(); 
+    //    - write cd-rs
+    void writeCdr(); 
 
+    struct CD
+    {
+        //5 properties:
+        int maxSpeed = 100;
+        float outerDiameter = 5.0f;
+        float innerDiameter = 0.5f;
+        std::string color { "black" };
+        std::string title { "Dark Side Of The Moon" };
+        //3 things it can do:
+        void getScratched(); 
+        void storeData(); 
+        void goObsolete(); 
+    };
+};
 
+struct Monitor
+{
+    //5 properties:
+    //    - width (float)
+    float width = 18.0f;
+    //    - number of pixels (int)
+    int numberOfPixels = 1120;
+    //    - color (std::string)
+    std::string color { "black" };
+    //    - refresh rate (int)
+    int refreshRate = 60;
+    //    - depth (float)
+    float depth = 12.0f;
+    //3 things it can do:
+    //    - dislay images
+    void displayImage(); 
+    //    - adjust brightness
+    void adjustBrightness(int brightness); 
+    //    - turn off
+    void turnOff(); 
+};
+
+struct HardDrive
+{
+    //5 properties:
+    //    - max speed (int)
+    int maxSpeed = 100;
+    //    - number of platters (int)
+    int numberOfPlatters = 1;
+    //    - number of magnets (int)
+    int numberOfMagnets = 1;
+    //    - memory size (int)
+    int memorySize = 120;
+    //    - age in years (int)
+    int ageInYears = 2;
+    //3 things it can do:
+    //    - store data
+    void storeData(std::string filePath); 
+    //    - retrieve data
+    void retrieveData(std::string filePath); 
+    //    - go into power-save mode
+    void goIntoPowerSaveMode(); 
+};
+
+struct Keyboard
+{
+    //5 properties:
+    //    - number of keys (int)
+    int numberOfKeys = 100;
+    //    - number of function keys (int)
+    int numberOfFunctionKeys = 12;
+    //    - case color (std::string)
+    std::string caseColor { "black" };
+    //    - button color (std::string)
+    std::string buttonColor { "gray" };
+    //    - width (float)
+    float width = 16.0f;
+    //3 things it can do:
+    //    - output button presses
+    void outputButtonPress(int buttonCode); 
+    //    - display num lock
+    void displayNumLock(); 
+    //    - display caps lock
+    void displayCapsLock(); 
+};
+
+struct Cpu
+{
+    //5 properties:
+    //    - speed (int)
+    int speed = 1666;
+    //    - width (float)
+    float width = 1.0f;
+    //    - height (float)
+    float height = 1.0f;
+    //    - chipset name (std::string)
+    std::string chipsetName { "delta bridge" };
+    //    - age in years (int)
+    int ageInYears = 3;
+    //3 things it can do:
+    //    - communicate with memory
+    void communicateWithMemory(HardDrive hardDrive); 
+    //    - communicate with video card
+    void communicateWithVideoCard(Monitor monitor); 
+    //    - communicate with peripherals  
+    void communicateWithPeripheral(Keyboard keyboard); 
+};
+
+struct Computer
+{
+    //5 properties:
+    //    - cd drive
+    CdDrive cdDrive;
+    //    - monitor
+    Monitor monitor;
+    //    - hard drive
+    HardDrive hardDrive;
+    //    - keyboard
+    Keyboard keyboard;
+    //    - cpu
+    Cpu cpu;
+    //3 things it can do:
+    //    - load documents
+    void loadDocument(std::string filePath); 
+    //    - save documents
+    void saveDocument(std::string filePath); 
+    //    - play videos  
+    void playVideo(std::string videoPath); 
+};
 
 
 int main()
