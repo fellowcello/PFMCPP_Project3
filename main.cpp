@@ -444,28 +444,6 @@ Thing 1) dishwasher
     2) spin the spray nozzles
     3) heat the dishes to dry them
 */
-struct Dishwasher
-{
-    //5 properties:
-    //    - color (sdt::string)
-    std::string color { "green" };
-    //    - number of racks (int)
-    int numberOfRacks = 2;
-    //    - number of silverware baskets (int)
-    int numberOfSilverwareBaskets = 3;
-    //    - start button width (float)
-    float startButtonWidth = 1.0f;
-    //    - cycle option dial diameter (float)
-    float cycleDialDiameter = 3.0f;
-    //3 things it can do:
-    //    - spray dishes with water
-    void sprayDishes(); 
-    //    - spin the spray nozzles
-    void spinNozzles(); 
-    //    - heat the dishes to dry them
-    void heatDishes(int minutesToHeat); 
-};
-
 
 /*
 Thing 2) desk
@@ -480,27 +458,6 @@ Thing 2) desk
     2) hold a computer
     3) extend and retract the keyboard tray
 */
-struct Desk
-{
-    //5 properties:
-    //    - keyboard tray width (float)
-    float keyboardTrayWidth = 12.0f;
-    //    - monitor riser height (float)
-    float monitorRiserHeight = 5.0f;
-    //    - mouse pad color (sdt::string)
-    std::string color { "blue" };
-    //    - work surface width (float)
-    float workSurfaceWidth = 36.0f;
-    //    - number of drawers (int)
-    int numberOfDrawers = 3;
-    //3 things it can do:
-    //    - store things
-    void storeThings(int numberOfThings); 
-    //    - hold a computer
-    void holdComputer(); 
-    //    - extend and retract the keyboard tray
-    void extendKeyboardTray(); 
-};
 
 /*
 Thing 3) mp3 player
@@ -515,27 +472,6 @@ Thing 3) mp3 player
     2) play a music file
     3) display information about files
 */
-struct Mp3Player
-{
-    //5 properties:
-    //    - number of buttons (int)
-    int numberOfButtons = 5;
-    //    - on/off switch color (sdt::string)
-    std::string onOffSwitchColor { "white" };
-    //    - display screen width (float)
-    float displayScreenWidth = 1.0f;
-    //    - belt clip depth (float)
-    float beltClipDepth = 1.0f;
-    //    - number of memory card slots (int)
-    int numberOfCardSlots = 1;
-    //3 things it can do:
-    //    - load files from memory card
-    void loadFile(std::string filePath); 
-    //    - play a music file
-    void playFile(); 
-    //    - display information about files
-    void displayInfo(); 
-};
 
 /*
 Thing 4) bicycle
@@ -550,27 +486,6 @@ Thing 4) bicycle
     2) roll
     3) turn left
 */
-struct Bicycle
-{
-    //5 properties:
-    //    - chain length (float)
-    float chainLength = 1.0f;
-    //    - seat color (sdt::string)
-    std::string seatColor { "green" };
-    //    - handlebars width (float)
-    float handlebarsWidth = 24.0f;
-    //    - number of wheels (int)
-    int numberOfWheels = 2;
-    //    - pedals material (sdt::string)
-    std::string pedalsMaterial { "steel" };
-    //3 things it can do:
-    //    - support the rider
-    void supportRider(); 
-    //    - roll
-    void roll(); 
-    //    - turn left
-    void turnLeft(); 
-};
 
 /*
 Thing 5) cd drive
@@ -585,41 +500,6 @@ Thing 5) cd drive
     2) play dvds
     3) write cd-rs
 */
-struct CdDrive
-{
-    //5 properties:
-    //    - max speed (int)
-    int maxSpeed = 100;
-    //    - disc diameter (float)
-    float discDiameter = 5.0f;
-    //    - number of trays (int)
-    int numberOfTrays = 1;
-    //    - color (std::string)
-    std::string color { "black" };
-    //    - number of formats supported (int)
-    int numberOfFormatsSupported = 3;
-    //3 things it can do:
-    //    - play cds
-    void playCd(); 
-    //    - play dvds
-    void playDVD(); 
-    //    - write cd-rs
-    void writeCdr(); 
-
-    struct CD
-    {
-        //5 properties:
-        int maxSpeed = 100;
-        float outerDiameter = 5.0f;
-        float innerDiameter = 0.5f;
-        std::string color { "black" };
-        std::string title { "Dark Side Of The Moon" };
-        //3 things it can do:
-        void getScratched(); 
-        void storeData(); 
-        void goObsolete(); 
-    };
-};
 
 /*
 Thing 6) monitor
@@ -634,27 +514,6 @@ Thing 6) monitor
     2) adjust brightness
     3) turn off
 */
-struct Monitor
-{
-    //5 properties:
-    //    - width (float)
-    float width = 18.0f;
-    //    - number of pixels (int)
-    int numberOfPixels = 1120;
-    //    - color (std::string)
-    std::string color { "black" };
-    //    - refresh rate (int)
-    int refreshRate = 60;
-    //    - depth (float)
-    float depth = 12.0f;
-    //3 things it can do:
-    //    - dislay images
-    void displayImage(); 
-    //    - adjust brightness
-    void adjustBrightness(int brightness); 
-    //    - turn off
-    void turnOff(); 
-};
 
 /*
 Thing 7) hard drive
@@ -669,27 +528,6 @@ Thing 7) hard drive
     2) retrieve data
     3) go into power-save mode
 */
-struct HardDrive
-{
-    //5 properties:
-    //    - max speed (int)
-    int maxSpeed = 100;
-    //    - number of platters (int)
-    int numberOfPlatters = 1;
-    //    - number of magnets (int)
-    int numberOfMagnets = 1;
-    //    - memory size (int)
-    int memorySize = 120;
-    //    - age in years (int)
-    int ageInYears = 2;
-    //3 things it can do:
-    //    - store data
-    void storeData(std::string filePath); 
-    //    - retrieve data
-    void retrieveData(std::string filePath); 
-    //    - go into power-save mode
-    void goIntoPowerSaveMode(); 
-};
 
 /*
 Thing 8) keyboard
@@ -704,27 +542,6 @@ Thing 8) keyboard
     2) display num lock
     3) display caps lock
 */
-struct Keyboard
-{
-    //5 properties:
-    //    - number of keys (int)
-    int numberOfKeys = 100;
-    //    - number of function keys (int)
-    int numberOfFunctionKeys = 12;
-    //    - case color (std::string)
-    std::string caseColor { "black" };
-    //    - button color (std::string)
-    std::string buttonColor { "gray" };
-    //    - width (float)
-    float width = 16.0f;
-    //3 things it can do:
-    //    - output button presses
-    void outputButtonPress(int buttonCode); 
-    //    - display num lock
-    void displayNumLock(); 
-    //    - display caps lock
-    void displayCapsLock(); 
-};
 
 /*
 Thing 9) cpu
@@ -739,27 +556,6 @@ Thing 9) cpu
     2) communicate with video card
     3) communicate with peripherals
 */
-struct Cpu
-{
-    //5 properties:
-    //    - speed (int)
-    int speed = 1666;
-    //    - width (float)
-    float width = 1.0f;
-    //    - height (float)
-    float height = 1.0f;
-    //    - chipset name (std::string)
-    std::string chipsetName { "delta bridge" };
-    //    - age in years (int)
-    int ageInYears = 3;
-    //3 things it can do:
-    //    - communicate with memory
-    void communicateWithMemory(HardDrive hardDrive); 
-    //    - communicate with video card
-    void communicateWithVideoCard(Monitor monitor); 
-    //    - communicate with peripherals  
-    void communicateWithPeripheral(Keyboard keyboard); 
-};
 
 /*
 Thing 10) computer
@@ -774,28 +570,6 @@ Thing 10) computer
     2) save documents
     3) play videos
 */
-struct Computer
-{
-    //5 properties:
-    //    - cd drive
-    CdDrive cdDrive;
-    //    - monitor
-    Monitor monitor;
-    //    - hard drive
-    HardDrive hardDrive;
-    //    - keyboard
-    Keyboard keyboard;
-    //    - cpu
-    Cpu cpu;
-    //3 things it can do:
-    //    - load documents
-    void loadDocument(std::string filePath); 
-    //    - save documents
-    void saveDocument(std::string filePath); 
-    //    - play videos  
-    void playVideo(std::string videoPath); 
-};
-
 
 
 /*
@@ -1256,12 +1030,239 @@ Part 1e - Step 19: Request a review
 paste your code below
 */
 
+struct Dishwasher
+{
+    //5 properties:
+    //    - color (sdt::string)
+    std::string color { "green" };
+    //    - number of racks (int)
+    int numberOfRacks = 2;
+    //    - number of silverware baskets (int)
+    int numberOfSilverwareBaskets = 3;
+    //    - start button width (float)
+    float startButtonWidth = 1.0f;
+    //    - cycle option dial diameter (float)
+    float cycleDialDiameter = 3.0f;
+    //3 things it can do:
+    //    - spray dishes with water
+    void sprayDishes(); 
+    //    - spin the spray nozzles
+    void spinNozzles(); 
+    //    - heat the dishes to dry them
+    void heatDishes(int minutesToHeat); 
+};
 
+struct Desk
+{
+    //5 properties:
+    //    - keyboard tray width (float)
+    float keyboardTrayWidth = 12.0f;
+    //    - monitor riser height (float)
+    float monitorRiserHeight = 5.0f;
+    //    - mouse pad color (sdt::string)
+    std::string color { "blue" };
+    //    - work surface width (float)
+    float workSurfaceWidth = 36.0f;
+    //    - number of drawers (int)
+    int numberOfDrawers = 3;
+    //3 things it can do:
+    //    - store things
+    void storeThings(int numberOfThings); 
+    //    - hold a computer
+    void holdComputer(); 
+    //    - extend and retract the keyboard tray
+    void extendKeyboardTray(); 
+};
 
+struct Mp3Player
+{
+    //5 properties:
+    //    - number of buttons (int)
+    int numberOfButtons = 5;
+    //    - on/off switch color (sdt::string)
+    std::string onOffSwitchColor { "white" };
+    //    - display screen width (float)
+    float displayScreenWidth = 1.0f;
+    //    - belt clip depth (float)
+    float beltClipDepth = 1.0f;
+    //    - number of memory card slots (int)
+    int numberOfCardSlots = 1;
+    //3 things it can do:
+    //    - load files from memory card
+    void loadFile(std::string filePath); 
+    //    - play a music file
+    void playFile(); 
+    //    - display information about files
+    void displayInfo(); 
+};
 
+struct Bicycle
+{
+    //5 properties:
+    //    - chain length (float)
+    float chainLength = 1.0f;
+    //    - seat color (sdt::string)
+    std::string seatColor { "green" };
+    //    - handlebars width (float)
+    float handlebarsWidth = 24.0f;
+    //    - number of wheels (int)
+    int numberOfWheels = 2;
+    //    - pedals material (sdt::string)
+    std::string pedalsMaterial { "steel" };
+    //3 things it can do:
+    //    - support the rider
+    void supportRider(); 
+    //    - roll
+    void roll(); 
+    //    - turn left
+    void turnLeft(); 
+};
 
+struct CdDrive
+{
+    //5 properties:
+    //    - max speed (int)
+    int maxSpeed = 100;
+    //    - disc diameter (float)
+    float discDiameter = 5.0f;
+    //    - number of trays (int)
+    int numberOfTrays = 1;
+    //    - color (std::string)
+    std::string color { "black" };
+    //    - number of formats supported (int)
+    int numberOfFormatsSupported = 3;
+    //3 things it can do:
+    //    - play cds
+    void playCd(); 
+    //    - play dvds
+    void playDVD(); 
+    //    - write cd-rs
+    void writeCdr(); 
 
+    struct CD
+    {
+        //5 properties:
+        int maxSpeed = 100;
+        float outerDiameter = 5.0f;
+        float innerDiameter = 0.5f;
+        std::string color { "black" };
+        std::string title { "Dark Side Of The Moon" };
+        //3 things it can do:
+        void getScratched(); 
+        void storeData(); 
+        void goObsolete(); 
+    };
+};
 
+struct Monitor
+{
+    //5 properties:
+    //    - width (float)
+    float width = 18.0f;
+    //    - number of pixels (int)
+    int numberOfPixels = 1120;
+    //    - color (std::string)
+    std::string color { "black" };
+    //    - refresh rate (int)
+    int refreshRate = 60;
+    //    - depth (float)
+    float depth = 12.0f;
+    //3 things it can do:
+    //    - dislay images
+    void displayImage(); 
+    //    - adjust brightness
+    void adjustBrightness(int brightness); 
+    //    - turn off
+    void turnOff(); 
+};
+
+struct HardDrive
+{
+    //5 properties:
+    //    - max speed (int)
+    int maxSpeed = 100;
+    //    - number of platters (int)
+    int numberOfPlatters = 1;
+    //    - number of magnets (int)
+    int numberOfMagnets = 1;
+    //    - memory size (int)
+    int memorySize = 120;
+    //    - age in years (int)
+    int ageInYears = 2;
+    //3 things it can do:
+    //    - store data
+    void storeData(std::string filePath); 
+    //    - retrieve data
+    void retrieveData(std::string filePath); 
+    //    - go into power-save mode
+    void goIntoPowerSaveMode(); 
+};
+
+struct Keyboard
+{
+    //5 properties:
+    //    - number of keys (int)
+    int numberOfKeys = 100;
+    //    - number of function keys (int)
+    int numberOfFunctionKeys = 12;
+    //    - case color (std::string)
+    std::string caseColor { "black" };
+    //    - button color (std::string)
+    std::string buttonColor { "gray" };
+    //    - width (float)
+    float width = 16.0f;
+    //3 things it can do:
+    //    - output button presses
+    void outputButtonPress(int buttonCode); 
+    //    - display num lock
+    void displayNumLock(); 
+    //    - display caps lock
+    void displayCapsLock(); 
+};
+
+struct Cpu
+{
+    //5 properties:
+    //    - speed (int)
+    int speed = 1666;
+    //    - width (float)
+    float width = 1.0f;
+    //    - height (float)
+    float height = 1.0f;
+    //    - chipset name (std::string)
+    std::string chipsetName { "delta bridge" };
+    //    - age in years (int)
+    int ageInYears = 3;
+    //3 things it can do:
+    //    - communicate with memory
+    void communicateWithMemory(HardDrive hardDrive); 
+    //    - communicate with video card
+    void communicateWithVideoCard(Monitor monitor); 
+    //    - communicate with peripherals  
+    void communicateWithPeripheral(Keyboard keyboard); 
+};
+
+struct Computer
+{
+    //5 properties:
+    //    - cd drive
+    CdDrive cdDrive;
+    //    - monitor
+    Monitor monitor;
+    //    - hard drive
+    HardDrive hardDrive;
+    //    - keyboard
+    Keyboard keyboard;
+    //    - cpu
+    Cpu cpu;
+    //3 things it can do:
+    //    - load documents
+    void loadDocument(std::string filePath); 
+    //    - save documents
+    void saveDocument(std::string filePath); 
+    //    - play videos  
+    void playVideo(std::string videoPath); 
+};
 
 
 int main()
