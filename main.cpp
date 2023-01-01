@@ -778,10 +778,15 @@ struct Computer
 {
     //5 properties:
     //    - cd drive
+    CdDrive cdDrive;
     //    - monitor
+    Monitor monitor;
     //    - hard drive
+    HardDrive hardDrive;
     //    - keyboard
+    Keyboard keyboard;
     //    - cpu
+    Cpu cpu;
     //3 things it can do:
     //    - load documents
     void loadDocument(std::string filePath); 
