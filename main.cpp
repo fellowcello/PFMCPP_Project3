@@ -448,10 +448,15 @@ struct Dishwasher
 {
     //5 properties:
     //    - color (sdt::string)
+    std::string color { "green" };
     //    - number of racks (int)
+    int numberOfRacks = 2;
     //    - number of silverware baskets (int)
+    int numberOfSilverwareBaskets = 3;
     //    - start button width (float)
+    float startButtonWidth = 1.0f;
     //    - cycle option dial diameter (float)
+    float cycleDialDiameter = 3.0f;
     //3 things it can do:
     //    - spray dishes with water
     //    - spin the spray nozzles
@@ -476,10 +481,15 @@ struct Desk
 {
     //5 properties:
     //    - keyboard tray width (float)
+    float keyboardTrayWidth = 12.0f;
     //    - monitor riser height (float)
+    float monitorRiserHeight = 5.0f;
     //    - mouse pad color (sdt::string)
+    std::string color { "blue" };
     //    - work surface width (float)
+    float workSurfaceWidth = 36.0f;
     //    - number of drawers (int)
+    int numberOfDrawers = 3;
     //3 things it can do:
     //    - store things
     //    - hold a computer
@@ -503,10 +513,15 @@ struct Mp3Player
 {
     //5 properties:
     //    - number of buttons (int)
+    int numberOfButtons = 5;
     //    - on/off switch color (sdt::string)
+    std::string onOffSwitchColor { "white" };
     //    - display screen width (float)
+    float displayScreenWidth = 1.0f;
     //    - belt clip depth (float)
+    float beltClipDepth = 1.0f;
     //    - number of memory card slots (int)
+    int numberOfCardSlots = 1;
     //3 things it can do:
     //    - load files from memory card
     //    - play a music file
@@ -530,10 +545,15 @@ struct Bicycle
 {
     //5 properties:
     //    - chain length (float)
+    float chainLength = 1.0f;
     //    - seat color (sdt::string)
+    std::string seatColor { "green" };
     //    - handlebars width (float)
+    float handlebarsWidth = 24.0f;
     //    - number of wheels (int)
+    int numberOfWheels = 2;
     //    - pedals material (sdt::string)
+    std::string pedalsMaterial { "steel" };
     //3 things it can do:
     //    - support the rider
     //    - roll
@@ -557,10 +577,15 @@ struct CdDrive
 {
     //5 properties:
     //    - max speed (int)
+    int maxSpeed = 100;
     //    - disc diameter (float)
+    float discDiameter = 5.0f;
     //    - number of trays (int)
+    int numberOfTrays = 1;
     //    - color (std::string)
+    std::string color { "black" };
     //    - number of formats supported (int)
+    int numberOfFormatsSupported = 3;
     //3 things it can do:
     //    - play cds
     //    - play dvds
@@ -584,10 +609,15 @@ struct Monitor
 {
     //5 properties:
     //    - width (float)
+    float width = 18.0f;
     //    - number of pixels (int)
+    int numberOfPixels = 1120;
     //    - color (std::string)
+    std::string color { "black" };
     //    - refresh rate (int)
+    int refreshRate = 60;
     //    - depth (float)
+    float depth = 12.0f;
     //3 things it can do:
     //    - dislay images
     //    - adjust brightness
@@ -611,10 +641,15 @@ struct HardDrive
 {
     //5 properties:
     //    - max speed (int)
+    int maxSpeed = 100;
     //    - number of platters (int)
+    int numberOfPlatters = 1;
     //    - number of magnets (int)
+    int numberOfMagnets = 1;
     //    - memory size (int)
+    int memorySize = 120;
     //    - age in years (int)
+    int ageInYears = 2;
     //3 things it can do:
     //    - store data
     //    - retrieve data
@@ -638,10 +673,15 @@ struct Keyboard
 {
     //5 properties:
     //    - number of keys (int)
+    int numberOfKeys = 100;
     //    - number of function keys (int)
+    int numberOfFunctionKeys = 12;
     //    - case color (std::string)
+    std::string caseColor { "black" };
     //    - button color (std::string)
+    std::string buttonColor { "gray" };
     //    - width (float)
+    float width = 16.0f;
     //3 things it can do:
     //    - output button presses
     //    - display num lock
@@ -665,10 +705,15 @@ struct Cpu
 {
     //5 properties:
     //    - speed (int)
+    int speed = 1666;
     //    - width (float)
+    float width = 1.0f;
     //    - height (float)
+    float height = 1.0f;
     //    - chipset name (std::string)
+    std::string chipsetName { "delta bridge" };
     //    - age in years (int)
+    int ageInYears = 3;
     //3 things it can do:
     //    - communicate with memory
     //    - communicate with video card
