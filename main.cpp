@@ -459,8 +459,11 @@ struct Dishwasher
     float cycleDialDiameter = 3.0f;
     //3 things it can do:
     //    - spray dishes with water
+    void sprayDishes(); 
     //    - spin the spray nozzles
+    void spinNozzles(); 
     //    - heat the dishes to dry them
+    void heatDishes(int minutesToHeat); 
 };
 
 
@@ -492,8 +495,11 @@ struct Desk
     int numberOfDrawers = 3;
     //3 things it can do:
     //    - store things
+    void storeThings(int numberOfThings); 
     //    - hold a computer
+    void holdComputer(); 
     //    - extend and retract the keyboard tray
+    void extendKeyboardTray(); 
 };
 
 /*
@@ -524,8 +530,11 @@ struct Mp3Player
     int numberOfCardSlots = 1;
     //3 things it can do:
     //    - load files from memory card
+    void loadFile(std::string filePath); 
     //    - play a music file
+    void playFile(); 
     //    - display information about files
+    void displayInfo(); 
 };
 
 /*
@@ -556,8 +565,11 @@ struct Bicycle
     std::string pedalsMaterial { "steel" };
     //3 things it can do:
     //    - support the rider
+    void supportRider(); 
     //    - roll
+    void roll(); 
     //    - turn left
+    void turnLeft(); 
 };
 
 /*
@@ -588,8 +600,11 @@ struct CdDrive
     int numberOfFormatsSupported = 3;
     //3 things it can do:
     //    - play cds
+    void playCd(); 
     //    - play dvds
+    void playDVD(); 
     //    - write cd-rs
+    void writeCdr(); 
 };
 
 /*
@@ -620,8 +635,11 @@ struct Monitor
     float depth = 12.0f;
     //3 things it can do:
     //    - dislay images
+    void displayImage(); 
     //    - adjust brightness
+    void adjustBrightness(int brightness); 
     //    - turn off
+    void turnOff(); 
 };
 
 /*
@@ -652,8 +670,11 @@ struct HardDrive
     int ageInYears = 2;
     //3 things it can do:
     //    - store data
+    void storeData(std::string filePath); 
     //    - retrieve data
+    void retrieveData(std::string filePath); 
     //    - go into power-save mode
+    void goIntoPowerSaveMode(); 
 };
 
 /*
@@ -684,8 +705,11 @@ struct Keyboard
     float width = 16.0f;
     //3 things it can do:
     //    - output button presses
+    void outputButtonPress(int buttonCode); 
     //    - display num lock
+    void displayNumLock(); 
     //    - display caps lock
+    void displayCapsLock(); 
 };
 
 /*
@@ -716,8 +740,11 @@ struct Cpu
     int ageInYears = 3;
     //3 things it can do:
     //    - communicate with memory
+    void communicateWithMemory(); 
     //    - communicate with video card
-    //    - communicate with peripherals   
+    void communicateWithVideoCard(); 
+    //    - communicate with peripherals  
+    void communicateWithPeripheral(); 
 };
 
 /*
@@ -743,8 +770,11 @@ struct Computer
     //    - cpu
     //3 things it can do:
     //    - load documents
+    void loadDocument(std::string filePath); 
     //    - save documents
+    void saveDocument(std::string filePath); 
     //    - play videos  
+    void playVideo(std::string videoPath); 
 };
 
 
