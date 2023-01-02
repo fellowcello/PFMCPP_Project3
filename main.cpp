@@ -110,23 +110,23 @@ struct CarWash
 
 struct Person
 {
-	int age;
-	int height;
-	float hairLength;
-	float GPA;
-	unsigned int SATScore;
-	int distanceTraveled;
+    int age;
+    int height;
+    float hairLength;
+    float GPA;
+    unsigned int SATScore;
+    int distanceTraveled;
 
-	void run(int howFast, bool startWithLeftFoot);
+    void run(int howFast, bool startWithLeftFoot);
 
-	struct Foot
-	{
-		void stepForward();
-		int stepSize();
-	};
+    struct Foot
+    {
+        void stepForward();
+        int stepSize();
+    };
 
-	Foot leftFoot;
-	Foot rightFoot;
+    Foot leftFoot;
+    Foot rightFoot;
 };
 
 
@@ -176,7 +176,7 @@ void Dishwasher::spinNozzles()
 
 void Dishwasher::heatDishes(int minutesToHeat)
 {
-    minutesToHeat++;
+    ++minutesToHeat;
 }
 
 struct Desk
@@ -194,7 +194,7 @@ struct Desk
 
 void Desk::storeThings(int numberOfThings)
 {
-    numberOfThings++;
+    ++numberOfThings;
 }
 
 void Desk::holdComputer()
@@ -222,7 +222,7 @@ struct Mp3Player
 
 void Mp3Player::loadFile(std::string filePath)
 {
-    filePath = "c:/music/files/Money.mp3";
+    std::string newPath { "d:/" + filePath };
 }
 
 void Mp3Player::playFile()
@@ -341,7 +341,7 @@ void Monitor::displayImage()
 
 void Monitor::adjustBrightness(int brightness)
 {
-    brightness++;
+    ++brightness;
 }
 
 void Monitor::turnOff()
@@ -365,12 +365,12 @@ struct HardDrive
 
 void HardDrive::storeData(std::string filePath)
 {
-    filePath = "c:/myfiles/garage.jpg";
+    std::string newPath { "c:/" + filePath };
 }
 
 void HardDrive::retrieveData(std::string filePath)
 {
-    filePath = "c:/myfiles/resume.doc";
+    std::string newPath { "c:/" + filePath };
 }
 
 void HardDrive::goIntoPowerSaveMode()
@@ -393,7 +393,7 @@ struct Keyboard
 
 void Keyboard::outputButtonPress(int buttonCode)
 {
-    buttonCode++;
+    ++buttonCode;
 }
 
 void Keyboard::displayNumLock()
@@ -421,17 +421,17 @@ struct Cpu
 
 void Cpu::communicateWithMemory(HardDrive hardDrive)
 {
-    hardDrive.ageInYears++;
+    ++hardDrive.ageInYears;
 }
 
 void Cpu::communicateWithVideoCard(Monitor monitor)
 {
-    monitor.numberOfPixels++;
+    ++monitor.numberOfPixels;
 }
 
 void Cpu::communicateWithPeripheral(Keyboard keyboard)
 {
-    keyboard.numberOfKeys++;
+    ++keyboard.numberOfKeys;
 }
 
 struct Computer
@@ -449,17 +449,17 @@ struct Computer
 
 void Computer::loadDocument(std::string filePath)
 {
-    filePath = "c:/myfiles/taxes.doc";
+    std::string newPath { "c:/" + filePath };
 }
 
 void Computer::saveDocument(std::string filePath)
 {
-    filePath = "c:/myfiles/cancel.doc";
+    std::string newPath { "c:/" + filePath };
 }
 
 void Computer::playVideo(std::string videoPath)
 {
-    videoPath = "c:/myvideos/kickflip.mpg";
+    std::string newPath { "c:/" + videoPath };
 }
 
 
