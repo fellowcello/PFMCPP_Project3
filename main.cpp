@@ -108,7 +108,26 @@ struct CarWash
     You'll need to insert the Person struct from the video in the space below.
  */
 
+struct Person
+{
+	int age;
+	int height;
+	float hairLength;
+	float GPA;
+	unsigned int SATScore;
+	int distanceTraveled;
 
+	void run(int howFast, bool startWithLeftFoot);
+
+	struct Foot
+	{
+		void stepForward();
+		int stepSize();
+	};
+
+	Foot leftFoot;
+	Foot rightFoot;
+};
 
 
 
@@ -134,237 +153,314 @@ struct CarWash
 
 struct Dishwasher
 {
-    //5 properties:
-    //    - color (sdt::string)
     std::string color { "green" };
-    //    - number of racks (int)
     int numberOfRacks = 2;
-    //    - number of silverware baskets (int)
     int numberOfSilverwareBaskets = 3;
-    //    - start button width (float)
     float startButtonWidth = 1.0f;
-    //    - cycle option dial diameter (float)
     float cycleDialDiameter = 3.0f;
-    //3 things it can do:
-    //    - spray dishes with water
+
     void sprayDishes(); 
-    //    - spin the spray nozzles
     void spinNozzles(); 
-    //    - heat the dishes to dry them
     void heatDishes(int minutesToHeat); 
 };
 
+void Dishwasher::sprayDishes()
+{
+    
+}
+
+void Dishwasher::spinNozzles()
+{
+    
+}
+
+void Dishwasher::heatDishes(int minutesToHeat)
+{
+    minutesToHeat++;
+}
+
 struct Desk
 {
-    //5 properties:
-    //    - keyboard tray width (float)
     float keyboardTrayWidth = 12.0f;
-    //    - monitor riser height (float)
     float monitorRiserHeight = 5.0f;
-    //    - mouse pad color (sdt::string)
     std::string color { "blue" };
-    //    - work surface width (float)
     float workSurfaceWidth = 36.0f;
-    //    - number of drawers (int)
     int numberOfDrawers = 3;
-    //3 things it can do:
-    //    - store things
+
     void storeThings(int numberOfThings); 
-    //    - hold a computer
     void holdComputer(); 
-    //    - extend and retract the keyboard tray
     void extendKeyboardTray(); 
 };
 
+void Desk::storeThings(int numberOfThings)
+{
+    numberOfThings++;
+}
+
+void Desk::holdComputer()
+{
+    
+}
+
+void Desk::extendKeyboardTray()
+{
+    
+}
+
 struct Mp3Player
 {
-    //5 properties:
-    //    - number of buttons (int)
     int numberOfButtons = 5;
-    //    - on/off switch color (sdt::string)
     std::string onOffSwitchColor { "white" };
-    //    - display screen width (float)
     float displayScreenWidth = 1.0f;
-    //    - belt clip depth (float)
     float beltClipDepth = 1.0f;
-    //    - number of memory card slots (int)
     int numberOfCardSlots = 1;
-    //3 things it can do:
-    //    - load files from memory card
+
     void loadFile(std::string filePath); 
-    //    - play a music file
     void playFile(); 
-    //    - display information about files
     void displayInfo(); 
 };
 
+void Mp3Player::loadFile(std::string filePath)
+{
+    filePath = "c:/music/files/Money.mp3";
+}
+
+void Mp3Player::playFile()
+{
+    
+}
+
+void Mp3Player::displayInfo()
+{
+    
+}
+
 struct Bicycle
 {
-    //5 properties:
-    //    - chain length (float)
     float chainLength = 1.0f;
-    //    - seat color (sdt::string)
     std::string seatColor { "green" };
-    //    - handlebars width (float)
     float handlebarsWidth = 24.0f;
-    //    - number of wheels (int)
     int numberOfWheels = 2;
-    //    - pedals material (sdt::string)
     std::string pedalsMaterial { "steel" };
-    //3 things it can do:
-    //    - support the rider
+
     void supportRider(); 
-    //    - roll
     void roll(); 
-    //    - turn left
     void turnLeft(); 
 };
 
+void Bicycle::supportRider()
+{
+    
+}
+
+void Bicycle::roll()
+{
+    
+}
+
+void Bicycle::turnLeft()
+{
+    
+}
+
+
+
 struct CdDrive
 {
-    //5 properties:
-    //    - max speed (int)
     int maxSpeed = 100;
-    //    - disc diameter (float)
     float discDiameter = 5.0f;
-    //    - number of trays (int)
     int numberOfTrays = 1;
-    //    - color (std::string)
     std::string color { "black" };
-    //    - number of formats supported (int)
     int numberOfFormatsSupported = 3;
-    //3 things it can do:
-    //    - play cds
+
     void playCd(); 
-    //    - play dvds
     void playDVD(); 
-    //    - write cd-rs
     void writeCdr(); 
 
     struct CD
     {
-        //5 properties:
         int maxSpeed = 100;
         float outerDiameter = 5.0f;
         float innerDiameter = 0.5f;
         std::string color { "black" };
         std::string title { "Dark Side Of The Moon" };
-        //3 things it can do:
+
         void getScratched(); 
         void storeData(); 
         void goObsolete(); 
     };
 };
 
+void CdDrive::playCd()
+{
+    
+}
+
+void CdDrive::playDVD()
+{
+    
+}
+
+void CdDrive::writeCdr()
+{
+    
+}
+
+void CdDrive::CD::getScratched()
+{
+    
+}
+
+void CdDrive::CD::storeData()
+{
+    
+}
+
+void CdDrive::CD::goObsolete()
+{
+    
+}
+
 struct Monitor
 {
-    //5 properties:
-    //    - width (float)
     float width = 18.0f;
-    //    - number of pixels (int)
     int numberOfPixels = 1120;
-    //    - color (std::string)
     std::string color { "black" };
-    //    - refresh rate (int)
     int refreshRate = 60;
-    //    - depth (float)
     float depth = 12.0f;
-    //3 things it can do:
-    //    - dislay images
+
     void displayImage(); 
-    //    - adjust brightness
     void adjustBrightness(int brightness); 
-    //    - turn off
     void turnOff(); 
 };
 
+void Monitor::displayImage()
+{
+    
+}
+
+void Monitor::adjustBrightness(int brightness)
+{
+    brightness++;
+}
+
+void Monitor::turnOff()
+{
+    
+}
+
+
 struct HardDrive
 {
-    //5 properties:
-    //    - max speed (int)
     int maxSpeed = 100;
-    //    - number of platters (int)
     int numberOfPlatters = 1;
-    //    - number of magnets (int)
     int numberOfMagnets = 1;
-    //    - memory size (int)
     int memorySize = 120;
-    //    - age in years (int)
     int ageInYears = 2;
-    //3 things it can do:
-    //    - store data
+
     void storeData(std::string filePath); 
-    //    - retrieve data
     void retrieveData(std::string filePath); 
-    //    - go into power-save mode
     void goIntoPowerSaveMode(); 
 };
 
+void HardDrive::storeData(std::string filePath)
+{
+    filePath = "c:/myfiles/garage.jpg";
+}
+
+void HardDrive::retrieveData(std::string filePath)
+{
+    filePath = "c:/myfiles/resume.doc";
+}
+
+void HardDrive::goIntoPowerSaveMode()
+{
+    
+}
+
 struct Keyboard
 {
-    //5 properties:
-    //    - number of keys (int)
     int numberOfKeys = 100;
-    //    - number of function keys (int)
     int numberOfFunctionKeys = 12;
-    //    - case color (std::string)
     std::string caseColor { "black" };
-    //    - button color (std::string)
     std::string buttonColor { "gray" };
-    //    - width (float)
     float width = 16.0f;
-    //3 things it can do:
-    //    - output button presses
+
     void outputButtonPress(int buttonCode); 
-    //    - display num lock
     void displayNumLock(); 
-    //    - display caps lock
     void displayCapsLock(); 
 };
 
+void Keyboard::outputButtonPress(int buttonCode)
+{
+    buttonCode++;
+}
+
+void Keyboard::displayNumLock()
+{
+
+}
+
+void Keyboard::displayCapsLock()
+{
+
+}
+
 struct Cpu
 {
-    //5 properties:
-    //    - speed (int)
     int speed = 1666;
-    //    - width (float)
     float width = 1.0f;
-    //    - height (float)
     float height = 1.0f;
-    //    - chipset name (std::string)
     std::string chipsetName { "delta bridge" };
-    //    - age in years (int)
     int ageInYears = 3;
-    //3 things it can do:
-    //    - communicate with memory
+
     void communicateWithMemory(HardDrive hardDrive); 
-    //    - communicate with video card
     void communicateWithVideoCard(Monitor monitor); 
-    //    - communicate with peripherals  
     void communicateWithPeripheral(Keyboard keyboard); 
 };
 
+void Cpu::communicateWithMemory(HardDrive hardDrive)
+{
+    hardDrive.ageInYears++;
+}
+
+void Cpu::communicateWithVideoCard(Monitor monitor)
+{
+    monitor.numberOfPixels++;
+}
+
+void Cpu::communicateWithPeripheral(Keyboard keyboard)
+{
+    keyboard.numberOfKeys++;
+}
+
 struct Computer
 {
-    //5 properties:
-    //    - cd drive
     CdDrive cdDrive;
-    //    - monitor
     Monitor monitor;
-    //    - hard drive
     HardDrive hardDrive;
-    //    - keyboard
     Keyboard keyboard;
-    //    - cpu
     Cpu cpu;
-    //3 things it can do:
-    //    - load documents
+
     void loadDocument(std::string filePath); 
-    //    - save documents
     void saveDocument(std::string filePath); 
-    //    - play videos  
     void playVideo(std::string videoPath); 
 };
+
+void Computer::loadDocument(std::string filePath)
+{
+    filePath = "c:/myfiles/taxes.doc";
+}
+
+void Computer::saveDocument(std::string filePath)
+{
+    filePath = "c:/myfiles/cancel.doc";
+}
+
+void Computer::playVideo(std::string videoPath)
+{
+    videoPath = "c:/myvideos/kickflip.mpg";
+}
 
 
 int main()
