@@ -458,74 +458,76 @@ int main()
     Example::main();
 
     Dishwasher dishWasher1;
-    Dishwasher dishWasher2;
-    Desk desk1;
-    Mp3Player mp3Player1;
-    Mp3Player mp3Player2;
-    Bicycle bicycle1;
-    CdDrive cdDrive1;
-    CdDrive::CD darkSide;
-    Monitor monitor1;
-    Monitor monitor2;
-    HardDrive hardDrive1;
-    Keyboard keyboard1;
-    Cpu cpu1;
-    Cpu cpu2;
-    Computer computer1;
-
     dishWasher1.sprayDishes();
     dishWasher1.spinNozzles();
+    std::cout << "dishWasher1.startButtonWidth: " << dishWasher1.startButtonWidth << std::endl;
+    
+    Dishwasher dishWasher2;
     dishWasher2.heatDishes(10);
     
+    Desk desk1;
     desk1.storeThings(50);
     desk1.holdComputer();
     desk1.extendKeyboardTray();
+    std::cout << "desk1.numberOfDrawers: " << desk1.numberOfDrawers << std::endl;
     
+    Mp3Player mp3Player1;
     mp3Player1.loadFile("music/mysong.mp3");
-    mp3Player2.playFile();
     mp3Player1.displayInfo();
-
+    std::cout << "mp3Player1.onOffSwitchColor: " << mp3Player1.onOffSwitchColor << std::endl;
+    
+    Mp3Player mp3Player2;
+    mp3Player2.playFile();
+    
+    Bicycle bicycle1;
     bicycle1.supportRider();
     bicycle1.roll();
     bicycle1.turnLeft();
-
+    std::cout << "bicycle1.numberOfWheels: " << bicycle1.numberOfWheels << std::endl;
+    
+    CdDrive cdDrive1;
     cdDrive1.playCd();
     cdDrive1.playDVD();
     cdDrive1.writeCdr();
-
+    std::cout << "cdDrive1.maxSpeed: " << cdDrive1.maxSpeed << std::endl;
+    
+    CdDrive::CD darkSide;
     darkSide.getScratched();
     darkSide.storeData();
     darkSide.goObsolete();
-
+    
+    Monitor monitor1;
     monitor1.displayImage();
     monitor1.adjustBrightness(85);
+    std::cout << "monitor1.depth: " << monitor1.depth << std::endl;
+    
+    Monitor monitor2;
     monitor2.turnOff();
-
+    
+    HardDrive hardDrive1;
     hardDrive1.storeData("mydocuments/word.doc");
     hardDrive1.retrieveData("desktop/text.txt");
     hardDrive1.goIntoPowerSaveMode();
-
+    std::cout << "hardDrive1.ageInYears: " << hardDrive1.ageInYears << std::endl;
+    
+    Keyboard keyboard1;
     keyboard1.outputButtonPress(23);
     keyboard1.displayNumLock();
     keyboard1.displayCapsLock();
-
+    std::cout << "keyboard1.buttonColor: " << keyboard1.buttonColor << std::endl;
+    
+    Cpu cpu1;
     cpu1.communicateWithMemory(hardDrive1);
     cpu1.communicateWithVideoCard(monitor1);
-    cpu1.communicateWithPeripheral(keyboard1);
-
+    std::cout << "cpu1.speed: " << cpu1.speed << std::endl;
+    
+    Cpu cpu2;
+    cpu2.communicateWithPeripheral(keyboard1);
+    
+    Computer computer1;
     computer1.loadDocument("documents/mydocument.doc");
     computer1.saveDocument("documents/myotherdocument.doc");
     computer1.playVideo("videos/mycoolvideo.mpg");
-    
-    std::cout << "dishWasher1.startButtonWidth: " << dishWasher1.startButtonWidth << std::endl;
-    std::cout << "desk1.numberOfDrawers: " << desk1.numberOfDrawers << std::endl;
-    std::cout << "mp3Player1.onOffSwitchColor: " << mp3Player1.onOffSwitchColor << std::endl;
-    std::cout << "bicycle1.numberOfWheels: " << bicycle1.numberOfWheels << std::endl;
-    std::cout << "cdDrive1.maxSpeed: " << cdDrive1.maxSpeed << std::endl;
-    std::cout << "monitor1.depth: " << monitor1.depth << std::endl;
-    std::cout << "hardDrive1.ageInYears: " << hardDrive1.ageInYears << std::endl;
-    std::cout << "keyboard1.buttonColor: " << keyboard1.buttonColor << std::endl;
-    std::cout << "cpu1.speed: " << cpu1.speed << std::endl;
 
     std::cout << "good to go!" << std::endl;
 }
