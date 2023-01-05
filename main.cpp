@@ -60,7 +60,7 @@ Dishwasher::Dishwasher() :
 numberOfRacks(2),
 numberOfSilverwareBaskets(3)
 {
-     std::cout << "Dishwasher being constructed!" << std::endl;
+    std::cout << "Dishwasher being constructed!" << std::endl;
 }
 
 void Dishwasher::sprayDishes()
