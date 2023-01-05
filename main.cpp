@@ -70,9 +70,6 @@ int main()
 //call Example::main() in main()
 
 
-
-
-
 struct Dishwasher
 {
     Dishwasher();
@@ -85,6 +82,7 @@ struct Dishwasher
     void sprayDishes(); 
     void spinNozzles(); 
     void heatDishes(int minutesToHeat); 
+    void countBaskets();
 };
 
 Dishwasher::Dishwasher() : 
@@ -109,6 +107,16 @@ void Dishwasher::heatDishes(int minutesToHeat)
     ++minutesToHeat;
 }
 
+void Dishwasher::countBaskets()
+{
+    for(int i = 0; i < 9; ++i)
+    {
+        numberOfSilverwareBaskets = i;
+        std::cout << "numberOfSilverwareBaskets: " << numberOfSilverwareBaskets << std::endl;
+    }
+}
+
+
 struct Desk
 {
     Desk();
@@ -121,6 +129,7 @@ struct Desk
     void storeThings(int numberOfThings); 
     void holdComputer(); 
     void extendKeyboardTray(); 
+    void setColor();
 };
 
 Desk::Desk() :
@@ -146,6 +155,16 @@ void Desk::extendKeyboardTray()
     
 }
 
+void Desk::setColor()
+{
+    for(int i = 0; i < 1; ++i)
+    {
+        color = "white";
+        std::cout << "desk color: " << color << std::endl;
+    }
+}
+
+
 struct Mp3Player
 {
     Mp3Player();
@@ -158,6 +177,7 @@ struct Mp3Player
     void loadFile(std::string filePath); 
     void playFile(); 
     void displayInfo(); 
+    int findFiles();
 };
 
 Mp3Player::Mp3Player() :
@@ -185,6 +205,18 @@ void Mp3Player::displayInfo()
     
 }
 
+int Mp3Player::findFiles()
+{
+    int count = 0;
+    for(int i = 0; i < 5; ++i)
+    {
+        std::cout << "file count: " << i << std::endl;
+        count = i;
+    }
+    return count;
+}
+
+
 struct Bicycle
 {
     Bicycle();
@@ -197,6 +229,7 @@ struct Bicycle
     void supportRider(); 
     void roll(); 
     void turnLeft(); 
+    void changePedalMaterial(std::string); 
 };
 
 Bicycle::Bicycle() :
@@ -220,6 +253,16 @@ void Bicycle::turnLeft()
     std::cout << "Bicycle::turnLeft() numberOfWheels:" << numberOfWheels << std::endl;
 }
 
+void Bicycle::changePedalMaterial(std::string newMaterial)
+{
+    int i = 0;
+    while(i < 1)
+    {
+        pedalsMaterial = newMaterial;
+        std::cout << "pedalsMaterial: " << pedalsMaterial << std::endl;
+        i += 1;
+    }
+}
 
 
 struct CdDrive
@@ -234,6 +277,7 @@ struct CdDrive
     void playCd(); 
     void playDVD(); 
     void writeCdr(); 
+    int findSpeed();
 
     struct CD
     {
@@ -287,6 +331,17 @@ void CdDrive::CD::goObsolete()
     
 }
 
+int CdDrive::findSpeed()
+{
+    int speed = 0;
+    for(int i = 97; i < maxSpeed; ++i)
+    {
+        speed = i;
+    }
+    return speed;
+}
+
+
 struct Monitor
 {
     Monitor();
@@ -299,6 +354,7 @@ struct Monitor
     void displayImage(); 
     void adjustBrightness(int brightness); 
     void turnOff(); 
+    void refreshScreen();
 };
 
 Monitor::Monitor() :
@@ -324,6 +380,15 @@ void Monitor::turnOff()
     
 }
 
+void Monitor::refreshScreen()
+{
+    for(int i = 0; i < 5; ++i)
+    {
+        refreshRate += i;
+    }
+    std::cout << "refreshRate: " << refreshRate << std::endl;
+}
+
 
 struct HardDrive
 {
@@ -337,6 +402,7 @@ struct HardDrive
     void storeData(std::string filePath); 
     void retrieveData(std::string filePath); 
     void goIntoPowerSaveMode(); 
+    void findFreeMemory();
 };
 
 HardDrive::HardDrive() :
@@ -365,6 +431,17 @@ void HardDrive::goIntoPowerSaveMode()
     std::cout << "HardDrive::goIntoPowerSaveMode() maxSpeed:" << maxSpeed << " numberOfMagnets: " << numberOfMagnets << std::endl;  
 }
 
+void HardDrive::findFreeMemory()
+{
+    int freeMemory = memorySize;
+    for(int i = 0; i < 10; ++i)
+    {
+        freeMemory -= i;
+    }
+    std::cout << "total memory: " << memorySize << " freeMemory: " << freeMemory << std::endl;
+}
+
+
 struct Keyboard
 {
     Keyboard();
@@ -377,6 +454,7 @@ struct Keyboard
     void outputButtonPress(int buttonCode); 
     void displayNumLock(); 
     void displayCapsLock(); 
+    int buttonPressTime();
 };
 
 Keyboard::Keyboard() :
@@ -402,6 +480,17 @@ void Keyboard::displayCapsLock()
 
 }
 
+int Keyboard::buttonPressTime()
+{
+    int time = 0;
+    for(int i = 0;i < 100; ++i)
+    {
+        time = i;
+    }
+    return time;
+}
+
+
 struct Cpu
 {
     Cpu();
@@ -414,6 +503,7 @@ struct Cpu
     void communicateWithMemory(HardDrive hardDrive); 
     void communicateWithVideoCard(Monitor monitor); 
     void communicateWithPeripheral(Keyboard keyboard); 
+    float getArea();
 };
 
 Cpu::Cpu() :
@@ -439,6 +529,16 @@ void Cpu::communicateWithPeripheral(Keyboard keyboard)
 {
     ++keyboard.numberOfKeys;
 }
+
+float Cpu::getArea()
+{
+    for(float i = 0.0f;i < 4.0f; ++i)
+    {
+        width += i;
+    }
+    return width * height;
+}
+
 
 struct Computer
 {
@@ -480,19 +580,21 @@ int main()
 {
     Example::main();
 
-    Dishwasher dishWasher1;
-    dishWasher1.sprayDishes();
-    dishWasher1.spinNozzles();
-    std::cout << "dishWasher1.startButtonWidth: " << dishWasher1.startButtonWidth << std::endl;
+    Dishwasher dishwasher1;
+    dishwasher1.sprayDishes();
+    dishwasher1.spinNozzles();
+    std::cout << "dishwasher1.startButtonWidth: " << dishwasher1.startButtonWidth << std::endl;
     
-    Dishwasher dishWasher2;
-    dishWasher2.heatDishes(10);
+    Dishwasher dishwasher2;
+    dishwasher2.heatDishes(10);
+    dishwasher2.countBaskets();
     
     Desk desk1;
     desk1.storeThings(50);
     desk1.holdComputer();
     desk1.extendKeyboardTray();
     std::cout << "desk1.numberOfDrawers: " << desk1.numberOfDrawers << std::endl;
+    desk1.setColor();
     
     Mp3Player mp3Player1;
     mp3Player1.loadFile("music/mysong.mp3");
@@ -501,18 +603,23 @@ int main()
     
     Mp3Player mp3Player2;
     mp3Player2.playFile();
+    int mp3FileCount = mp3Player2.findFiles();
+    std::cout << "mp3FileCount: " << mp3FileCount << std::endl;
     
     Bicycle bicycle1;
     bicycle1.supportRider();
     bicycle1.roll();
     bicycle1.turnLeft();
     std::cout << "bicycle1.numberOfWheels: " << bicycle1.numberOfWheels << std::endl;
+    bicycle1.changePedalMaterial("aluminum"); 
     
     CdDrive cdDrive1;
     cdDrive1.playCd();
     cdDrive1.playDVD();
     cdDrive1.writeCdr();
     std::cout << "cdDrive1.maxSpeed: " << cdDrive1.maxSpeed << std::endl;
+    int cdDriveSpeed = cdDrive1.findSpeed();
+    std::cout << "cdDrive1 speed: " << cdDriveSpeed << std::endl;
     
     CdDrive::CD darkSide;
     darkSide.getScratched();
@@ -526,18 +633,22 @@ int main()
     
     Monitor monitor2;
     monitor2.turnOff();
+    monitor2.refreshScreen();
     
     HardDrive hardDrive1;
     hardDrive1.storeData("mydocuments/word.doc");
     hardDrive1.retrieveData("desktop/text.txt");
     hardDrive1.goIntoPowerSaveMode();
     std::cout << "hardDrive1.ageInYears: " << hardDrive1.ageInYears << std::endl;
+    hardDrive1.findFreeMemory();
     
     Keyboard keyboard1;
     keyboard1.outputButtonPress(23);
     keyboard1.displayNumLock();
     keyboard1.displayCapsLock();
     std::cout << "keyboard1.buttonColor: " << keyboard1.buttonColor << std::endl;
+    int buttonTime1 = keyboard1.buttonPressTime();
+    std::cout << "buttonTime1: " << buttonTime1 << std::endl;
     
     Cpu cpu1;
     cpu1.communicateWithMemory(hardDrive1);
@@ -546,6 +657,8 @@ int main()
     
     Cpu cpu2;
     cpu2.communicateWithPeripheral(keyboard1);
+    float cpuArea = cpu2.getArea();
+    std::cout << "cpuArea: " << cpuArea << std::endl;
     
     Computer computer1;
     computer1.loadDocument("documents/mydocument.doc");
