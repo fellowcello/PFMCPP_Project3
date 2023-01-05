@@ -46,8 +46,8 @@ struct Dishwasher
 {
     Dishwasher();
     std::string color { "green" };
-    int numberOfRacks = 2;
-    int numberOfSilverwareBaskets = 3;
+    int numberOfRacks;
+    int numberOfSilverwareBaskets;
     float startButtonWidth = 1.0f;
     float cycleDialDiameter = 3.0f;
 
@@ -56,19 +56,21 @@ struct Dishwasher
     void heatDishes(int minutesToHeat); 
 };
 
-Dishwasher::Dishwasher()
+Dishwasher::Dishwasher() : 
+numberOfRacks(2),
+numberOfSilverwareBaskets(3)
 {
-    std::cout << "Dishwasher being constructed!" << std::endl;
+     std::cout << "Dishwasher being constructed!" << std::endl;
 }
 
 void Dishwasher::sprayDishes()
 {
-    
+    std::cout << "Dishwasher::sprayDishes() numberOfRacks:" << numberOfRacks << " numberOfSilverwareBaskets: " << numberOfSilverwareBaskets << std::endl;
 }
 
 void Dishwasher::spinNozzles()
 {
-        std::cout << "Dishwasher::spinNozzles() success!" << std::endl;
+    std::cout << "Dishwasher::spinNozzles() success!" << std::endl;
 }
 
 void Dishwasher::heatDishes(int minutesToHeat)
@@ -82,15 +84,17 @@ struct Desk
     float keyboardTrayWidth = 12.0f;
     float monitorRiserHeight = 5.0f;
     std::string color { "blue" };
-    float workSurfaceWidth = 36.0f;
-    int numberOfDrawers = 3;
+    float workSurfaceWidth;
+    int numberOfDrawers;
 
     void storeThings(int numberOfThings); 
     void holdComputer(); 
     void extendKeyboardTray(); 
 };
 
-Desk::Desk()
+Desk::Desk() :
+workSurfaceWidth(36.0f),
+numberOfDrawers(3)
 {
     std::cout << "Desk being constructed!" << std::endl;
 }
@@ -103,7 +107,7 @@ void Desk::storeThings(int numberOfThings)
 
 void Desk::holdComputer()
 {
-    
+    std::cout << "Desk::holdComputer() workSurfaceWidth:" << workSurfaceWidth << " numberOfDrawers: " << numberOfDrawers << std::endl;
 }
 
 void Desk::extendKeyboardTray()
@@ -114,18 +118,22 @@ void Desk::extendKeyboardTray()
 struct Mp3Player
 {
     Mp3Player();
-    int numberOfButtons = 5;
+    int numberOfButtons;
     std::string onOffSwitchColor { "white" };
-    float displayScreenWidth = 1.0f;
-    float beltClipDepth = 1.0f;
-    int numberOfCardSlots = 1;
+    float displayScreenWidth;
+    float beltClipDepth;
+    int numberOfCardSlots;
 
     void loadFile(std::string filePath); 
     void playFile(); 
     void displayInfo(); 
 };
 
-Mp3Player::Mp3Player()
+Mp3Player::Mp3Player() :
+numberOfButtons(5),
+displayScreenWidth(1.0f),
+beltClipDepth(1.0f),
+numberOfCardSlots(1)
 {
     std::cout << "Mp3Player being constructed!" << std::endl;
 }
@@ -138,7 +146,7 @@ void Mp3Player::loadFile(std::string filePath)
 
 void Mp3Player::playFile()
 {
-    
+    std::cout << "Mp3Player::playFile() numberOfButtons:" << numberOfButtons << " beltClipDepth: " << beltClipDepth << std::endl;
 }
 
 void Mp3Player::displayInfo()
@@ -152,7 +160,7 @@ struct Bicycle
     float chainLength = 1.0f;
     std::string seatColor { "green" };
     float handlebarsWidth = 24.0f;
-    int numberOfWheels = 2;
+    int numberOfWheels;
     std::string pedalsMaterial { "steel" };
 
     void supportRider(); 
@@ -160,7 +168,8 @@ struct Bicycle
     void turnLeft(); 
 };
 
-Bicycle::Bicycle()
+Bicycle::Bicycle() :
+numberOfWheels(2)
 {
     std::cout << "Bicycle being constructed!" << std::endl;
 }
@@ -177,7 +186,7 @@ void Bicycle::roll()
 
 void Bicycle::turnLeft()
 {
-    
+    std::cout << "Bicycle::turnLeft() numberOfWheels:" << numberOfWheels << std::endl;
 }
 
 
@@ -185,9 +194,9 @@ void Bicycle::turnLeft()
 struct CdDrive
 {
     CdDrive();
-    int maxSpeed = 100;
-    float discDiameter = 5.0f;
-    int numberOfTrays = 1;
+    int maxSpeed;
+    float discDiameter;
+    int numberOfTrays;
     std::string color { "black" };
     int numberOfFormatsSupported = 3;
 
@@ -209,7 +218,10 @@ struct CdDrive
     };
 };
 
-CdDrive::CdDrive()
+CdDrive::CdDrive() :
+maxSpeed(100),
+discDiameter(5.0f),
+numberOfTrays(1)
 {
     std::cout << "CdDrive being constructed!" << std::endl;
 }
@@ -221,7 +233,7 @@ void CdDrive::playCd()
 
 void CdDrive::playDVD()
 {
-    
+    std::cout << "CdDrive::playDVD() maxSpeed:" << maxSpeed << " discDiameter: " << discDiameter << std::endl;
 }
 
 void CdDrive::writeCdr()
@@ -248,24 +260,26 @@ struct Monitor
 {
     Monitor();
     float width = 18.0f;
-    int numberOfPixels = 1120;
+    int numberOfPixels;
     std::string color { "black" };
     int refreshRate = 60;
-    float depth = 12.0f;
+    float depth;
 
     void displayImage(); 
     void adjustBrightness(int brightness); 
     void turnOff(); 
 };
 
-Monitor::Monitor()
+Monitor::Monitor() :
+numberOfPixels(1120),
+depth(12.0f)
 {
     std::cout << "Monitor being constructed!" << std::endl;
 }
 
 void Monitor::displayImage()
 {
-    
+    std::cout << "Monitor::displayImage() numberOfPixels:" << numberOfPixels << " depth: " << depth << std::endl;
 }
 
 void Monitor::adjustBrightness(int brightness)
@@ -283,18 +297,23 @@ void Monitor::turnOff()
 struct HardDrive
 {
     HardDrive();
-    int maxSpeed = 100;
-    int numberOfPlatters = 1;
-    int numberOfMagnets = 1;
-    int memorySize = 120;
-    int ageInYears = 2;
+    int maxSpeed;
+    int numberOfPlatters;
+    int numberOfMagnets;
+    int memorySize;
+    int ageInYears;
 
     void storeData(std::string filePath); 
     void retrieveData(std::string filePath); 
     void goIntoPowerSaveMode(); 
 };
 
-HardDrive::HardDrive()
+HardDrive::HardDrive() :
+maxSpeed(100),
+numberOfPlatters(1),
+numberOfMagnets(1),
+memorySize(120),
+ageInYears(2)
 {
     std::cout << "HardDrive being constructed!" << std::endl;
 }
@@ -312,14 +331,14 @@ void HardDrive::retrieveData(std::string filePath)
 
 void HardDrive::goIntoPowerSaveMode()
 {
-    
+    std::cout << "HardDrive::goIntoPowerSaveMode() maxSpeed:" << maxSpeed << " numberOfMagnets: " << numberOfMagnets << std::endl;  
 }
 
 struct Keyboard
 {
     Keyboard();
-    int numberOfKeys = 100;
-    int numberOfFunctionKeys = 12;
+    int numberOfKeys;
+    int numberOfFunctionKeys;
     std::string caseColor { "black" };
     std::string buttonColor { "gray" };
     float width = 16.0f;
@@ -329,7 +348,9 @@ struct Keyboard
     void displayCapsLock(); 
 };
 
-Keyboard::Keyboard()
+Keyboard::Keyboard() :
+numberOfKeys(100),
+numberOfFunctionKeys(12)
 {
     std::cout << "Keyboard being constructed!" << std::endl;
 }
@@ -342,7 +363,7 @@ void Keyboard::outputButtonPress(int buttonCode)
 
 void Keyboard::displayNumLock()
 {
-
+    std::cout << "Keyboard::displayNumLock() numberOfKeys:" << numberOfKeys << " numberOfFunctionKeys: " << numberOfFunctionKeys << std::endl;
 }
 
 void Keyboard::displayCapsLock()
@@ -354,8 +375,8 @@ struct Cpu
 {
     Cpu();
     int speed = 1666;
-    float width = 1.0f;
-    float height = 1.0f;
+    float width;
+    float height;
     std::string chipsetName { "delta bridge" };
     int ageInYears = 3;
 
@@ -364,7 +385,9 @@ struct Cpu
     void communicateWithPeripheral(Keyboard keyboard); 
 };
 
-Cpu::Cpu()
+Cpu::Cpu() :
+width(1.0f),
+height(1.0f)
 {
     std::cout << "Cpu being constructed!" << std::endl;
 }
@@ -372,6 +395,7 @@ Cpu::Cpu()
 void Cpu::communicateWithMemory(HardDrive hardDrive)
 {
     ++hardDrive.ageInYears;
+    std::cout << "Cpu::communicateWithMemory() ageInYears:" << ageInYears << std::endl;
 }
 
 void Cpu::communicateWithVideoCard(Monitor monitor)
