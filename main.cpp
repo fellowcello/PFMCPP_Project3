@@ -76,6 +76,7 @@ int main()
 
 struct Dishwasher
 {
+    Dishwasher();
     std::string color { "green" };
     int numberOfRacks = 2;
     int numberOfSilverwareBaskets = 3;
@@ -87,6 +88,11 @@ struct Dishwasher
     void heatDishes(int minutesToHeat); 
 };
 
+Dishwasher::Dishwasher()
+{
+    std::cout << "Dishwasher being constructed!" << std::endl;
+}
+
 void Dishwasher::sprayDishes()
 {
     
@@ -94,7 +100,7 @@ void Dishwasher::sprayDishes()
 
 void Dishwasher::spinNozzles()
 {
-    
+        std::cout << "Dishwasher::spinNozzles() success!" << std::endl;
 }
 
 void Dishwasher::heatDishes(int minutesToHeat)
@@ -104,6 +110,7 @@ void Dishwasher::heatDishes(int minutesToHeat)
 
 struct Desk
 {
+    Desk();
     float keyboardTrayWidth = 12.0f;
     float monitorRiserHeight = 5.0f;
     std::string color { "blue" };
@@ -115,9 +122,15 @@ struct Desk
     void extendKeyboardTray(); 
 };
 
+Desk::Desk()
+{
+    std::cout << "Desk being constructed!" << std::endl;
+}
+
 void Desk::storeThings(int numberOfThings)
 {
     ++numberOfThings;
+    std::cout << "Desk::storeThings()" << numberOfThings << std::endl;
 }
 
 void Desk::holdComputer()
@@ -132,6 +145,7 @@ void Desk::extendKeyboardTray()
 
 struct Mp3Player
 {
+    Mp3Player();
     int numberOfButtons = 5;
     std::string onOffSwitchColor { "white" };
     float displayScreenWidth = 1.0f;
@@ -143,9 +157,15 @@ struct Mp3Player
     void displayInfo(); 
 };
 
+Mp3Player::Mp3Player()
+{
+    std::cout << "Mp3Player being constructed!" << std::endl;
+}
+
 void Mp3Player::loadFile(std::string filePath)
 {
     std::string newPath { "d:/" + filePath };
+    std::cout << "Mp3Player::loadFile()" << newPath << std::endl;
 }
 
 void Mp3Player::playFile()
@@ -160,6 +180,7 @@ void Mp3Player::displayInfo()
 
 struct Bicycle
 {
+    Bicycle();
     float chainLength = 1.0f;
     std::string seatColor { "green" };
     float handlebarsWidth = 24.0f;
@@ -171,6 +192,11 @@ struct Bicycle
     void turnLeft(); 
 };
 
+Bicycle::Bicycle()
+{
+    std::cout << "Bicycle being constructed!" << std::endl;
+}
+
 void Bicycle::supportRider()
 {
     
@@ -178,7 +204,7 @@ void Bicycle::supportRider()
 
 void Bicycle::roll()
 {
-    
+    std::cout << "Bicycle::roll() success!" << std::endl;
 }
 
 void Bicycle::turnLeft()
@@ -190,6 +216,7 @@ void Bicycle::turnLeft()
 
 struct CdDrive
 {
+    CdDrive();
     int maxSpeed = 100;
     float discDiameter = 5.0f;
     int numberOfTrays = 1;
@@ -214,9 +241,14 @@ struct CdDrive
     };
 };
 
+CdDrive::CdDrive()
+{
+    std::cout << "CdDrive being constructed!" << std::endl;
+}
+
 void CdDrive::playCd()
 {
-    
+    std::cout << "CdDrive::playCd() " << color << std::endl;
 }
 
 void CdDrive::playDVD()
@@ -246,6 +278,7 @@ void CdDrive::CD::goObsolete()
 
 struct Monitor
 {
+    Monitor();
     float width = 18.0f;
     int numberOfPixels = 1120;
     std::string color { "black" };
@@ -257,6 +290,11 @@ struct Monitor
     void turnOff(); 
 };
 
+Monitor::Monitor()
+{
+    std::cout << "Monitor being constructed!" << std::endl;
+}
+
 void Monitor::displayImage()
 {
     
@@ -265,6 +303,7 @@ void Monitor::displayImage()
 void Monitor::adjustBrightness(int brightness)
 {
     ++brightness;
+    std::cout << "Monitor::adjustBrightness() " << brightness << std::endl;
 }
 
 void Monitor::turnOff()
@@ -275,6 +314,7 @@ void Monitor::turnOff()
 
 struct HardDrive
 {
+    HardDrive();
     int maxSpeed = 100;
     int numberOfPlatters = 1;
     int numberOfMagnets = 1;
@@ -286,6 +326,11 @@ struct HardDrive
     void goIntoPowerSaveMode(); 
 };
 
+HardDrive::HardDrive()
+{
+    std::cout << "HardDrive being constructed!" << std::endl;
+}
+
 void HardDrive::storeData(std::string filePath)
 {
     std::string newPath { "c:/" + filePath };
@@ -294,6 +339,7 @@ void HardDrive::storeData(std::string filePath)
 void HardDrive::retrieveData(std::string filePath)
 {
     std::string newPath { "c:/" + filePath };
+    std::cout << "HardDrive::retrieveData() " << newPath << std::endl;
 }
 
 void HardDrive::goIntoPowerSaveMode()
@@ -303,6 +349,7 @@ void HardDrive::goIntoPowerSaveMode()
 
 struct Keyboard
 {
+    Keyboard();
     int numberOfKeys = 100;
     int numberOfFunctionKeys = 12;
     std::string caseColor { "black" };
@@ -314,9 +361,15 @@ struct Keyboard
     void displayCapsLock(); 
 };
 
+Keyboard::Keyboard()
+{
+    std::cout << "Keyboard being constructed!" << std::endl;
+}
+
 void Keyboard::outputButtonPress(int buttonCode)
 {
     ++buttonCode;
+    std::cout << "Keyboard::outputButtonPress() " << buttonCode << std::endl;
 }
 
 void Keyboard::displayNumLock()
@@ -331,6 +384,7 @@ void Keyboard::displayCapsLock()
 
 struct Cpu
 {
+    Cpu();
     int speed = 1666;
     float width = 1.0f;
     float height = 1.0f;
@@ -342,6 +396,11 @@ struct Cpu
     void communicateWithPeripheral(Keyboard keyboard); 
 };
 
+Cpu::Cpu()
+{
+    std::cout << "Cpu being constructed!" << std::endl;
+}
+
 void Cpu::communicateWithMemory(HardDrive hardDrive)
 {
     ++hardDrive.ageInYears;
@@ -350,6 +409,7 @@ void Cpu::communicateWithMemory(HardDrive hardDrive)
 void Cpu::communicateWithVideoCard(Monitor monitor)
 {
     ++monitor.numberOfPixels;
+    std::cout << "Cpu::communicateWithVideoCard() " << monitor.numberOfPixels << std::endl;
 }
 
 void Cpu::communicateWithPeripheral(Keyboard keyboard)
@@ -359,6 +419,7 @@ void Cpu::communicateWithPeripheral(Keyboard keyboard)
 
 struct Computer
 {
+    Computer();
     CdDrive cdDrive;
     Monitor monitor;
     HardDrive hardDrive;
@@ -369,6 +430,11 @@ struct Computer
     void saveDocument(std::string filePath); 
     void playVideo(std::string videoPath); 
 };
+
+Computer::Computer()
+{
+    std::cout << "Computer being constructed!" << std::endl;
+}
 
 void Computer::loadDocument(std::string filePath)
 {
@@ -383,12 +449,85 @@ void Computer::saveDocument(std::string filePath)
 void Computer::playVideo(std::string videoPath)
 {
     std::string newPath { "c:/" + videoPath };
+    std::cout << "Computer::playVideo() " << newPath << std::endl;
 }
 
 
 int main()
 {
     Example::main();
+
+    Dishwasher dishWasher1;
+    dishWasher1.sprayDishes();
+    dishWasher1.spinNozzles();
+    std::cout << "dishWasher1.startButtonWidth: " << dishWasher1.startButtonWidth << std::endl;
     
+    Dishwasher dishWasher2;
+    dishWasher2.heatDishes(10);
+    
+    Desk desk1;
+    desk1.storeThings(50);
+    desk1.holdComputer();
+    desk1.extendKeyboardTray();
+    std::cout << "desk1.numberOfDrawers: " << desk1.numberOfDrawers << std::endl;
+    
+    Mp3Player mp3Player1;
+    mp3Player1.loadFile("music/mysong.mp3");
+    mp3Player1.displayInfo();
+    std::cout << "mp3Player1.onOffSwitchColor: " << mp3Player1.onOffSwitchColor << std::endl;
+    
+    Mp3Player mp3Player2;
+    mp3Player2.playFile();
+    
+    Bicycle bicycle1;
+    bicycle1.supportRider();
+    bicycle1.roll();
+    bicycle1.turnLeft();
+    std::cout << "bicycle1.numberOfWheels: " << bicycle1.numberOfWheels << std::endl;
+    
+    CdDrive cdDrive1;
+    cdDrive1.playCd();
+    cdDrive1.playDVD();
+    cdDrive1.writeCdr();
+    std::cout << "cdDrive1.maxSpeed: " << cdDrive1.maxSpeed << std::endl;
+    
+    CdDrive::CD darkSide;
+    darkSide.getScratched();
+    darkSide.storeData();
+    darkSide.goObsolete();
+    
+    Monitor monitor1;
+    monitor1.displayImage();
+    monitor1.adjustBrightness(85);
+    std::cout << "monitor1.depth: " << monitor1.depth << std::endl;
+    
+    Monitor monitor2;
+    monitor2.turnOff();
+    
+    HardDrive hardDrive1;
+    hardDrive1.storeData("mydocuments/word.doc");
+    hardDrive1.retrieveData("desktop/text.txt");
+    hardDrive1.goIntoPowerSaveMode();
+    std::cout << "hardDrive1.ageInYears: " << hardDrive1.ageInYears << std::endl;
+    
+    Keyboard keyboard1;
+    keyboard1.outputButtonPress(23);
+    keyboard1.displayNumLock();
+    keyboard1.displayCapsLock();
+    std::cout << "keyboard1.buttonColor: " << keyboard1.buttonColor << std::endl;
+    
+    Cpu cpu1;
+    cpu1.communicateWithMemory(hardDrive1);
+    cpu1.communicateWithVideoCard(monitor1);
+    std::cout << "cpu1.speed: " << cpu1.speed << std::endl;
+    
+    Cpu cpu2;
+    cpu2.communicateWithPeripheral(keyboard1);
+    
+    Computer computer1;
+    computer1.loadDocument("documents/mydocument.doc");
+    computer1.saveDocument("documents/myotherdocument.doc");
+    computer1.playVideo("videos/mycoolvideo.mpg");
+
     std::cout << "good to go!" << std::endl;
 }
